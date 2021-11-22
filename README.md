@@ -7,7 +7,7 @@ yarn add https://github.com/voffkin/vue-sip-waypoint.git
 
 main.js
 ```
-import { Waypoint } from './plugins/Waypoint';
+import { Waypoint } from 'vue-sip-waypoint';
 Vue.component('Waypoint', Waypoint);
 ```
 
