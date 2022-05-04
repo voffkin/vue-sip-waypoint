@@ -54,7 +54,7 @@ export default {
           let action = (direction === 'down')? 'entry':'leave'
           this.$emit(action, { direction, element: this.$refs.root, id: this.id })
         },
-        offset: this.entryOffset
+        offset: this.entryOffset || '100%'
       })
 
       this.wpBottom = new Waypoint({
@@ -63,7 +63,7 @@ export default {
           let action = (direction === 'down')? 'leave':'entry'
           this.$emit(action, { direction, element: this.$refs.root, id: this.id })
         },
-        offset: this.leaveOffset
+        offset: this.leaveOffset || '0%'
       })
 
     }
